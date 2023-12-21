@@ -2,5 +2,7 @@
 
 </script>
 <template>
-    <h1>这是我的第一个页面</h1>
+    <div class="flex w-full pt-[64px]">
+        
+    </div>
 </template>

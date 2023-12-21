@@ -1,28 +1,21 @@
 <script setup lang='ts'>
-
+import Link from "./NavbarMenu/Link.vue";
+import Menu from "./NavbarMenu/Menu.vue";
 </script>
 <template>
-    <header class="w-screen">
+    <header class="flex fixed backdrop-filter backdrop-blur-md top-0 z-40 w-full flex-none transition-colors duration-300 lg:z-50 border-b border-gray-950/10 dark:border-gray-50/[0.2] bg-white/[0.5] dark:bg-gray-950/[0.5] h-[64px] max-h-[64px]">
         <div class="flex-1 flex items-center justify-between max-w-screen-2xl mx-auto px-4">
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                    role="img" class="font-black text-xl font-mono mr-2 inline-block" style="" width="1em" height="1em"
-                    viewBox="0 0 24 24" data-v-af8694fb="">
-                    <path fill="currentColor"
-                        d="M13.464 19.83h8.922c.283 0 .562-.073.807-.21a1.59 1.59 0 0 0 .591-.574a1.53 1.53 0 0 0 .216-.783a1.529 1.529 0 0 0-.217-.782L17.792 7.414a1.59 1.59 0 0 0-.591-.573a1.652 1.652 0 0 0-.807-.21c-.283 0-.562.073-.807.21a1.59 1.59 0 0 0-.59.573L13.463 9.99L10.47 4.953a1.591 1.591 0 0 0-.591-.573a1.653 1.653 0 0 0-.807-.21c-.284 0-.562.073-.807.21a1.591 1.591 0 0 0-.591.573L.216 17.481a1.53 1.53 0 0 0-.217.782c0 .275.074.545.216.783a1.59 1.59 0 0 0 .59.574c.246.137.525.21.808.21h5.6c2.22 0 3.856-.946 4.982-2.79l2.733-4.593l1.464-2.457l4.395 7.382h-5.859Zm-6.341-2.46l-3.908-.002l5.858-9.842l2.923 4.921l-1.957 3.29c-.748 1.196-1.597 1.632-2.916 1.632z">
-                    </path>
-                </svg>
-                <span class="text-2xl">Nuxt 3 Awesome Starter</span>
+                <slot name="title">
+                    <NuxtLink to="/" class="router-link-active router-link-exact-active font-bold text-lg text-primary-500">
+                        <Icon name="simple-icons:nuxtdotjs" class="font-black text-xl font-mono mr-2 inline-block" />
+                        <span>Nuxt 3 blog</span>
+                    </NuxtLink>
+                </slot>
             </div>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                    role="img" class="font-black text-xl font-mono mr-2 inline-block" style="" width="1em" height="1em"
-                    viewBox="0 0 24 24" data-v-af8694fb="">
-                    <path fill="currentColor"
-                        d="M13.464 19.83h8.922c.283 0 .562-.073.807-.21a1.59 1.59 0 0 0 .591-.574a1.53 1.53 0 0 0 .216-.783a1.529 1.529 0 0 0-.217-.782L17.792 7.414a1.59 1.59 0 0 0-.591-.573a1.652 1.652 0 0 0-.807-.21c-.283 0-.562.073-.807.21a1.59 1.59 0 0 0-.59.573L13.463 9.99L10.47 4.953a1.591 1.591 0 0 0-.591-.573a1.653 1.653 0 0 0-.807-.21c-.284 0-.562.073-.807.21a1.591 1.591 0 0 0-.591.573L.216 17.481a1.53 1.53 0 0 0-.217.782c0 .275.074.545.216.783a1.59 1.59 0 0 0 .59.574c.246.137.525.21.808.21h5.6c2.22 0 3.856-.946 4.982-2.79l2.733-4.593l1.464-2.457l4.395 7.382h-5.859Zm-6.341-2.46l-3.908-.002l5.858-9.842l2.923 4.921l-1.957 3.29c-.748 1.196-1.597 1.632-2.916 1.632z">
-                    </path>
-                </svg>
-                <span class="text-2xl">Nuxt 3 Awesome Starter</span>
+            <div class="flex space-x-4 items-center divide-x divide-gray-500">
+                <Menu />
+                <Link />
             </div>
         </div>
     </header>
