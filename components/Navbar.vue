@@ -9,7 +9,7 @@ import Menu from "./NavbarMenu/Menu.vue";
                 <slot name="title">
                     <NuxtLink to="/" class="router-link-active router-link-exact-active font-bold text-lg text-primary-500">
                         <Icon name="simple-icons:nuxtdotjs" class="font-black text-xl font-mono mr-2 inline-block" />
-                        <span>Nuxt 3 blog</span>
+                        <span>飞跃雪山</span>
                     </NuxtLink>
                 </slot>
             </div>
