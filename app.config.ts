@@ -13,6 +13,13 @@ export default defineAppConfig({
                 { type: "link", title: "Tag", to:"tag" },
             ],
         },
+        tag: {
+            tagList: [
+                { type: "前端开发", name: "Css" },
+                { type: "前端开发", name: "Javascript" },
+                { type: "前端开发", name: "Vue" },
+            ]
+        },
         author: {
             name: 'Jokul482',
             links: {

@@ -1,6 +1,7 @@
 <script setup lang='ts'>
-
+import Blog from "./blog/index.vue"
 </script>
 <template>
-    <h1>11111</h1>
+    <Tag />
+    <Blog />
 </template>

@@ -2,6 +2,9 @@
 import colors from 'tailwindcss/colors'
 const MyTheme = {
     colors: {
+        white: {
+            DEFAULT: '#FFFFFF',
+        },
         green: {
             DEFAULT: '#3BA676',
             '50': '#B4E4CF',
@@ -58,9 +61,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: MyTheme.colors.green,
-                // if want to change primary color to blue
-                // primary: MyTheme.colors.blue,
+                primary: MyTheme.colors.white,
                 green: MyTheme.colors.green,
                 blue: MyTheme.colors.blue,
                 red: MyTheme.colors.red,

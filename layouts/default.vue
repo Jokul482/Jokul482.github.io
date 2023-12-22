@@ -1,14 +1,14 @@
 <script setup lang="ts">
 </script>
 <template>
-    <div class="min-h-screen flex flex-col bg-slate-900">
-        <header class="py-5 border-b dark:border-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <header class="py-5 bg-slate-800">
             <div class="flex-1 flex items-center justify-between max-w-5xl mx-auto">
                 <div>
                     <slot name="title">
                         <NuxtLink to="/"
-                            class="router-link-active router-link-exact-active font-bold text-lg text-primary-500">
-                            <span>Blog</span>
+                            class="router-link-active router-link-exact-active font-bold text-lg">
+                            <span class="text-primary">Blog</span>
                         </NuxtLink>
                     </slot>
                 </div>
