@@ -17,7 +17,8 @@ const menu = blog.layout;
             <Icon name="akar-icons:moon-fill" class="text-primary"></Icon>
         </div> -->
         <nuxt-link :to="link.github" class="text-primary">
-            <Icon name="grommet-icons:github" />
+            <!-- <Icon name="grommet-icons:github" /> -->
+            <span class="space-x-3">Github</span>
         </nuxt-link>
     </div>
 </template>
