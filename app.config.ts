@@ -9,8 +9,9 @@ export default defineAppConfig({
         },
         layout: {
             menus: [
-                { type: "link", title: "Blog", to: "blog" },
-                { type: "link", title: "Tag", to:"tag" },
+                { type: "link", title: "Blog", to: "Blog" },
+                { type: "link", title: "Tag", to: "Tag" },
+                { type: "link", title: "GovExam", to: "GovExam" },
             ],
         },
         tag: {
